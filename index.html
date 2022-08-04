@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Repl Auth</title>
+  <!-- fun shenanigans to have the page render its own html -->
+  <style>
+    body { font-family: monospace; white-space: pre-wrap; }
+    body:before { content: '<body>'; color: #888888; }
+    body:after { content: '</body>'; color: #888888; }
+    p:before { content: '<p>'; color: #888888; }
+    p:after { content: '</p>'; color: #888888; }
+    style { display: block; color: #888888 }
+    style:before { content: '<style>'; color: #888888; }
+    style:after { content: '<\/style>'; color: #888888; }
+    script:before { content: '<script>'; color: #888888; }
+    script:after { content: '<\/script>'; color: #888888; }
+    code { color: #888888; }
+  </style>
+</head>
+<body>
+<p>This is an example using the repl auth script. All you need is the script below.</p>
+<code>&lt;script authed="alert('you authed!')" src="https://auth.util.repl.co/script.js"&gt;&lt;/script&gt;</code>
+<script authed="alert('you authed!')" src="https://auth.util.repl.co/script.js"></script>
+<p>You can style the button however you want!</p>
+<style>
+.replit-auth-button {
+  background: #2244ff;
+  border-radius: 3px;
+  border: none;
+  padding: 0.5em;
+  color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+  cursor: pointer;
+}
+.replit-auth-error {
+  color: red;
+}
+</style>
+</body>
+</html>
